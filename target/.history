@@ -1,0 +1,4 @@
+run local /home/spark/zc/item_score.data /home/spark/zc/output 200 1000 0.01
+local /home/spark/zc/item_score.data /home/spark/zc/output 200 1000 0.01
+run local /home/spark/zc/item_score.data /home/spark/zc/output 200 1000 0.01
+gen-idea
