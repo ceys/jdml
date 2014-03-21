@@ -1,28 +1,28 @@
-[0m[[0minfo[0m] [0mUpdating {file:/home/spark/zc/mf/}mf...[0m
-[0m[[0mdebug[0m] [0m:: resolving dependencies :: mf#mf_2.10;1.0[0m
+[0m[[0minfo[0m] [0mUpdating {file:/home/spark/zc/jdml/}jdml...[0m
+[0m[[0mdebug[0m] [0m:: resolving dependencies :: default#jdml_2.10;1.0[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
 [0m[[0mdebug[0m] [0m	refresh = false[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7bb841e8[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@61fcf951[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.10.3] org.scala-lang#scala-library;2.10.3[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.apache.spark#spark-core_2.10;0.9.0-incubating ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.spark#spark-core_2.10;0.9.0-incubating {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.spark#spark-core_2.10;0.9.0-incubating[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.apache.spark#spark-core_2.10;0.9.0-incubating[0m
 [0m[[0mdebug[0m] [0m	found org.apache.spark#spark-core_2.10;0.9.0-incubating in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;0.9.0-incubating->org.apache.hadoop#hadoop-client;1.0.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.apache.hadoop#hadoop-client;2.2.0 {compile=[default(compile)]} => dependency: org.apache.hadoop#hadoop-client;1.0.4 {compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.apache.hadoop#hadoop-client;1.0.4 ...[0m
@@ -1733,29 +1733,15 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;0.9.0-incubating->com.codahale.metrics#metrics-ganglia;3.0.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;0.9.0-incubating->com.codahale.metrics#metrics-graphite;3.0.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;0.9.0-incubating->com.codahale.metrics#metrics-graphite;3.0.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.apache.spark#spark-mllib_2.10;0.9.0-incubating ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.spark#spark-mllib_2.10;0.9.0-incubating {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/spark/.ivy2/local/org.apache.spark/spark-mllib_2.10/0.9.0-incubating/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.apache.spark#spark-mllib_2.10;0.9.0-incubating[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.10/0.9.0-incubating/spark-mllib_2.10-0.9.0-incubating.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.apache.spark#spark-mllib_2.10;0.9.0-incubating[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.10/0.9.0-incubating/spark-mllib_2.10-0.9.0-incubating.pom (0.9.0-incubating)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.10/0.9.0-incubating/spark-mllib_2.10-0.9.0-incubating.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.10/0.9.0-incubating/spark-mllib_2.10-0.9.0-incubating.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.10/0.9.0-incubating/spark-mllib_2.10-0.9.0-incubating.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.10/0.9.0-incubating/spark-mllib_2.10-0.9.0-incubating.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-mllib_2.10;0.9.0-incubating!spark-mllib_2.10.pom(pom.original) (1987ms)[0m
-[0m[[0minfo[0m] [0mResolving org.apache.spark#spark-parent;0.9.0-incubating ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.spark#spark-parent;0.9.0-incubating {}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.spark#spark-parent;0.9.0-incubating[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.apache.spark#spark-parent;0.9.0-incubating[0m
-[0m[[0mdebug[0m] [0m		tried /home/spark/.ivy2/local/org.apache.spark/spark-mllib_2.10/0.9.0-incubating/jars/spark-mllib_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.10/0.9.0-incubating/spark-mllib_2.10-0.9.0-incubating.jar[0m
-[0m[[0mdebug[0m] [0m	found org.apache.spark#spark-mllib_2.10;0.9.0-incubating in public[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->compile][0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.spark#spark-mllib_2.10;0.9.0-incubating[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.apache.spark#spark-mllib_2.10;0.9.0-incubating[0m
+[0m[[0mdebug[0m] [0m	found org.apache.spark#spark-mllib_2.10;0.9.0-incubating in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.eclipse.jetty#jetty-server;7.6.8.v20121106 [compile->master(*)][0m
@@ -1774,15 +1760,15 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.eclipse.jetty#jetty-server;7.6.8.v20121106 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.jblas#jblas;1.2.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.jblas#jblas;1.2.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.apache.hadoop#hadoop-client;2.2.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-client;2.2.0 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.hadoop#hadoop-client;2.2.0[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.apache.hadoop#hadoop-client;2.2.0[0m
 [0m[[0mdebug[0m] [0m	found org.apache.hadoop#hadoop-client;2.2.0 in public[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;2.2.0->org.apache.hadoop#hadoop-common;2.2.0 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.apache.hadoop#hadoop-common;2.2.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-common;2.2.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -3779,21 +3765,21 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;2.2.0->org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;2.2.0->org.apache.hadoop#hadoop-annotations;2.2.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;2.2.0->org.apache.hadoop#hadoop-annotations;2.2.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->compile][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;0.9.0-incubating->org.apache.hadoop#hadoop-client;1.0.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.apache.hadoop#hadoop-client;2.2.0 {compile=[default(compile)]} => dependency: org.apache.hadoop#hadoop-client;1.0.4 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.apache.hadoop#hadoop-client;2.2.0 {compile=[default(compile)]} => dependency: org.apache.hadoop#hadoop-client;1.0.4 {compile=[default(compile)]}[0m
@@ -5108,10 +5094,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.codahale.metrics#metrics-graphite;3.0.0->com.codahale.metrics#metrics-core;3.0.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.codahale.metrics#metrics-graphite;3.0.0->org.slf4j#slf4j-api;1.7.2 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.codahale.metrics#metrics-graphite;3.0.0->org.slf4j#slf4j-api;1.7.2 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.eclipse.jetty#jetty-server;7.6.8.v20121106 [compile->master(*)][0m
@@ -5126,10 +5112,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.eclipse.jetty#jetty-server;7.6.8.v20121106 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.jblas#jblas;1.2.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.jblas#jblas;1.2.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;2.2.0->org.apache.hadoop#hadoop-common;2.2.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;2.2.0->org.apache.hadoop#hadoop-common;2.2.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mexcluding dependency: javax.servlet#servlet-api;2.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
@@ -7017,18 +7003,18 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0->org.slf4j#slf4j-log4j12;1.7.5 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;2.2.0->org.apache.hadoop#hadoop-annotations;2.2.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;2.2.0->org.apache.hadoop#hadoop-annotations;2.2.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [test][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;0.9.0-incubating->org.apache.hadoop#hadoop-client;1.0.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.apache.hadoop#hadoop-client;2.2.0 {compile=[default(compile)]} => dependency: org.apache.hadoop#hadoop-client;1.0.4 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.apache.hadoop#hadoop-client;2.2.0 {compile=[default(compile)]} => dependency: org.apache.hadoop#hadoop-client;1.0.4 {compile=[default(compile)]}[0m
@@ -8425,10 +8411,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.codahale.metrics#metrics-graphite;3.0.0->com.codahale.metrics#metrics-core;3.0.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.codahale.metrics#metrics-graphite;3.0.0->org.slf4j#slf4j-api;1.7.2 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.codahale.metrics#metrics-graphite;3.0.0->org.slf4j#slf4j-api;1.7.2 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.eclipse.jetty#jetty-server;7.6.8.v20121106 [compile->master(*)][0m
@@ -8444,10 +8430,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.eclipse.jetty#jetty-server;7.6.8.v20121106 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.jblas#jblas;1.2.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.jblas#jblas;1.2.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;2.2.0->org.apache.hadoop#hadoop-common;2.2.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;2.2.0->org.apache.hadoop#hadoop-common;2.2.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mexcluding dependency: javax.servlet#servlet-api;2.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
@@ -10328,21 +10314,21 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0->org.slf4j#slf4j-log4j12;1.7.5 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;2.2.0->org.apache.hadoop#hadoop-annotations;2.2.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;2.2.0->org.apache.hadoop#hadoop-annotations;2.2.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [compile-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [compile-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;0.9.0-incubating->org.apache.hadoop#hadoop-client;1.0.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.apache.hadoop#hadoop-client;2.2.0 {compile=[default(compile)]} => dependency: org.apache.hadoop#hadoop-client;1.0.4 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.apache.hadoop#hadoop-client;2.2.0 {compile=[default(compile)]} => dependency: org.apache.hadoop#hadoop-client;1.0.4 {compile=[default(compile)]}[0m
@@ -11821,10 +11807,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.codahale.metrics#metrics-graphite;3.0.0->com.codahale.metrics#metrics-core;3.0.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.codahale.metrics#metrics-graphite;3.0.0->org.slf4j#slf4j-api;1.7.2 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.codahale.metrics#metrics-graphite;3.0.0->org.slf4j#slf4j-api;1.7.2 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.eclipse.jetty#jetty-server;7.6.8.v20121106 [compile->master(*)][0m
@@ -11841,10 +11827,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.eclipse.jetty#jetty-server;7.6.8.v20121106 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.jblas#jblas;1.2.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.jblas#jblas;1.2.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;2.2.0->org.apache.hadoop#hadoop-common;2.2.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;2.2.0->org.apache.hadoop#hadoop-common;2.2.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mexcluding dependency: javax.servlet#servlet-api;2.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
@@ -13725,20 +13711,20 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0->org.slf4j#slf4j-log4j12;1.7.5 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;2.2.0->org.apache.hadoop#hadoop-annotations;2.2.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;2.2.0->org.apache.hadoop#hadoop-annotations;2.2.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [optional][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [runtime-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [runtime-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;0.9.0-incubating->org.apache.hadoop#hadoop-client;1.0.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.apache.hadoop#hadoop-client;2.2.0 {compile=[default(compile)]} => dependency: org.apache.hadoop#hadoop-client;1.0.4 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.apache.hadoop#hadoop-client;2.2.0 {compile=[default(compile)]} => dependency: org.apache.hadoop#hadoop-client;1.0.4 {compile=[default(compile)]}[0m
@@ -15217,10 +15203,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.codahale.metrics#metrics-graphite;3.0.0->com.codahale.metrics#metrics-core;3.0.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.codahale.metrics#metrics-graphite;3.0.0->org.slf4j#slf4j-api;1.7.2 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.codahale.metrics#metrics-graphite;3.0.0->org.slf4j#slf4j-api;1.7.2 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.eclipse.jetty#jetty-server;7.6.8.v20121106 [compile->master(*)][0m
@@ -15237,10 +15223,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.eclipse.jetty#jetty-server;7.6.8.v20121106 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.jblas#jblas;1.2.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.jblas#jblas;1.2.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;2.2.0->org.apache.hadoop#hadoop-common;2.2.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;2.2.0->org.apache.hadoop#hadoop-common;2.2.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mexcluding dependency: javax.servlet#servlet-api;2.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
@@ -17121,20 +17107,20 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0->org.slf4j#slf4j-log4j12;1.7.5 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;2.2.0->org.apache.hadoop#hadoop-annotations;2.2.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;2.2.0->org.apache.hadoop#hadoop-annotations;2.2.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [test-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [test][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [test-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;0.9.0-incubating->org.apache.hadoop#hadoop-client;1.0.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.apache.hadoop#hadoop-client;2.2.0 {compile=[default(compile)]} => dependency: org.apache.hadoop#hadoop-client;1.0.4 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.apache.hadoop#hadoop-client;2.2.0 {compile=[default(compile)]} => dependency: org.apache.hadoop#hadoop-client;1.0.4 {compile=[default(compile)]}[0m
@@ -18777,10 +18763,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.codahale.metrics#metrics-graphite;3.0.0->com.codahale.metrics#metrics-core;3.0.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.codahale.metrics#metrics-graphite;3.0.0->org.slf4j#slf4j-api;1.7.2 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.codahale.metrics#metrics-graphite;3.0.0->org.slf4j#slf4j-api;1.7.2 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.apache.spark#spark-core_2.10;0.9.0-incubating [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.eclipse.jetty#jetty-server;7.6.8.v20121106 [compile->master(*)][0m
@@ -18799,10 +18785,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.eclipse.jetty#jetty-server;7.6.8.v20121106 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.jblas#jblas;1.2.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-mllib_2.10;0.9.0-incubating->org.jblas#jblas;1.2.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.spark#spark-mllib_2.10;0.9.0-incubating [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;2.2.0->org.apache.hadoop#hadoop-common;2.2.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;2.2.0->org.apache.hadoop#hadoop-common;2.2.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mexcluding dependency: javax.servlet#servlet-api;2.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
@@ -20683,27 +20669,27 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0->org.slf4j#slf4j-log4j12;1.7.5 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;2.2.0->org.apache.hadoop#hadoop-annotations;2.2.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;2.2.0->org.apache.hadoop#hadoop-annotations;2.2.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [optional][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.apache.hadoop#hadoop-client;2.2.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [plugin][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [plugin][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'sources'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [sources][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [sources][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'docs'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [docs][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [docs][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'pom'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [pom][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [pom][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'scala-tool'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for mf#mf_2.10;1.0 [scala-tool][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-compiler;2.10.3 [scala-tool->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#jdml_2.10;1.0 [scala-tool][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-compiler;2.10.3 [scala-tool->default][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-compiler;2.10.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.10.3 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.10.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-compiler;2.10.3[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-compiler;2.10.3 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-compiler;2.10.3 [scala-tool->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-compiler;2.10.3 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-compiler;2.10.3 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-compiler;2.10.3 [scala-tool->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.3->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.3->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.3->org.scala-lang#scala-library;2.10.3 [compile->default][0m
@@ -20727,8 +20713,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.3->org.scala-lang#scala-reflect;2.10.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.10.3->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.10.3->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-compiler;2.10.3 [scala-tool->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-compiler;2.10.3 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-compiler;2.10.3 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-compiler;2.10.3 [scala-tool->optional(default)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.3->org.scala-lang#jline;2.10.3 [optional->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#jline;2.10.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#jline;2.10.3 {optional=[compile(*), master(*)]}[0m
@@ -20743,11 +20729,11 @@
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.fusesource.jansi#jansi;1.4[0m
 [0m[[0mdebug[0m] [0m	found org.fusesource.jansi#jansi;1.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#jline;2.10.3->org.fusesource.jansi#jansi;1.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [scala-tool->default][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [scala-tool->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [scala-tool->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [scala-tool->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies mf#mf_2.10;1.0->org.scala-lang#scala-library;2.10.3 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [scala-tool->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#jdml_2.10;1.0->org.scala-lang#scala-library;2.10.3 [scala-tool->optional(default)][0m
 [0m[[0mdebug[0m] [0mall callers are evicted for org.apache.hadoop#hadoop-core;1.0.4: evicting too[0m
 [0m[[0mdebug[0m] [0mall callers are evicted for org.apache.hadoop#hadoop-core;1.0.4: evicting too[0m
 [0m[[0mdebug[0m] [0mall callers are evicted for org.apache.hadoop#hadoop-core;1.0.4: evicting too[0m
@@ -20772,16 +20758,11 @@
 [0m[[0mdebug[0m] [0mall callers are evicted for oro#oro;2.0.8: evicting too[0m
 [0m[[0mdebug[0m] [0mall callers are evicted for oro#oro;2.0.8: evicting too[0m
 [0m[[0mdebug[0m] [0mall callers are evicted for oro#oro;2.0.8: evicting too[0m
-[0m[[0mdebug[0m] [0m	resolved ivy file produced in /home/spark/zc/mf/target/resolution-cache/mf/mf_2.10/1.0/resolved.xml.xml[0m
+[0m[[0mdebug[0m] [0m	resolved ivy file produced in /home/spark/zc/jdml/target/resolution-cache/default/jdml_2.10/1.0/resolved.xml.xml[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.3!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.spark#spark-core_2.10;0.9.0-incubating!spark-core_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.10/0.9.0-incubating/spark-mllib_2.10-0.9.0-incubating.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.10/0.9.0-incubating/spark-mllib_2.10-0.9.0-incubating.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.10/0.9.0-incubating/spark-mllib_2.10-0.9.0-incubating.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.10/0.9.0-incubating/spark-mllib_2.10-0.9.0-incubating.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.10/0.9.0-incubating/spark-mllib_2.10-0.9.0-incubating.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.apache.spark#spark-mllib_2.10;0.9.0-incubating!spark-mllib_2.10.jar (10303ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.spark#spark-mllib_2.10;0.9.0-incubating!spark-mllib_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.hadoop#hadoop-client;2.2.0!hadoop-client.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.java.dev.jets3t#jets3t;0.7.1!jets3t.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.avro#avro;1.7.4!avro.jar[0m
@@ -20894,19 +20875,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.3!scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.3!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 13486ms :: artifacts dl 10427ms[0m
-[0m[[0mdebug[0m] [0m	report for mf#mf_2.10;1.0 compile produced in /home/spark/zc/mf/target/resolution-cache/reports/mf-mf_2.10-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for mf#mf_2.10;1.0 runtime produced in /home/spark/zc/mf/target/resolution-cache/reports/mf-mf_2.10-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for mf#mf_2.10;1.0 test produced in /home/spark/zc/mf/target/resolution-cache/reports/mf-mf_2.10-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for mf#mf_2.10;1.0 provided produced in /home/spark/zc/mf/target/resolution-cache/reports/mf-mf_2.10-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for mf#mf_2.10;1.0 optional produced in /home/spark/zc/mf/target/resolution-cache/reports/mf-mf_2.10-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for mf#mf_2.10;1.0 compile-internal produced in /home/spark/zc/mf/target/resolution-cache/reports/mf-mf_2.10-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for mf#mf_2.10;1.0 runtime-internal produced in /home/spark/zc/mf/target/resolution-cache/reports/mf-mf_2.10-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for mf#mf_2.10;1.0 test-internal produced in /home/spark/zc/mf/target/resolution-cache/reports/mf-mf_2.10-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for mf#mf_2.10;1.0 plugin produced in /home/spark/zc/mf/target/resolution-cache/reports/mf-mf_2.10-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for mf#mf_2.10;1.0 sources produced in /home/spark/zc/mf/target/resolution-cache/reports/mf-mf_2.10-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for mf#mf_2.10;1.0 docs produced in /home/spark/zc/mf/target/resolution-cache/reports/mf-mf_2.10-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for mf#mf_2.10;1.0 pom produced in /home/spark/zc/mf/target/resolution-cache/reports/mf-mf_2.10-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for mf#mf_2.10;1.0 scala-tool produced in /home/spark/zc/mf/target/resolution-cache/reports/mf-mf_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (13486ms resolve - 10427ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 10488ms :: artifacts dl 131ms[0m
+[0m[[0mdebug[0m] [0m	report for default#jdml_2.10;1.0 compile produced in /home/spark/zc/jdml/target/resolution-cache/reports/default-jdml_2.10-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#jdml_2.10;1.0 runtime produced in /home/spark/zc/jdml/target/resolution-cache/reports/default-jdml_2.10-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#jdml_2.10;1.0 test produced in /home/spark/zc/jdml/target/resolution-cache/reports/default-jdml_2.10-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#jdml_2.10;1.0 provided produced in /home/spark/zc/jdml/target/resolution-cache/reports/default-jdml_2.10-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#jdml_2.10;1.0 optional produced in /home/spark/zc/jdml/target/resolution-cache/reports/default-jdml_2.10-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#jdml_2.10;1.0 compile-internal produced in /home/spark/zc/jdml/target/resolution-cache/reports/default-jdml_2.10-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#jdml_2.10;1.0 runtime-internal produced in /home/spark/zc/jdml/target/resolution-cache/reports/default-jdml_2.10-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#jdml_2.10;1.0 test-internal produced in /home/spark/zc/jdml/target/resolution-cache/reports/default-jdml_2.10-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#jdml_2.10;1.0 plugin produced in /home/spark/zc/jdml/target/resolution-cache/reports/default-jdml_2.10-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#jdml_2.10;1.0 sources produced in /home/spark/zc/jdml/target/resolution-cache/reports/default-jdml_2.10-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#jdml_2.10;1.0 docs produced in /home/spark/zc/jdml/target/resolution-cache/reports/default-jdml_2.10-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#jdml_2.10;1.0 pom produced in /home/spark/zc/jdml/target/resolution-cache/reports/default-jdml_2.10-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#jdml_2.10;1.0 scala-tool produced in /home/spark/zc/jdml/target/resolution-cache/reports/default-jdml_2.10-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (10488ms resolve - 131ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
