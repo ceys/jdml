@@ -1,4 +1,4 @@
-name := "MF"
+name := "jdml"
 
 version := "1.0"
 

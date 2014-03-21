@@ -1,3 +1,5 @@
+package com.jd.spark.recomendation
+
 import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkContext._
