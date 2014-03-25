@@ -1,4 +1,4 @@
-package com.jd.spark.recomendation
+package com.jd.spark.recommendation
 
 import scala.collection.immutable._
 import org.apache.spark._
