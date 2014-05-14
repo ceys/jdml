@@ -13,10 +13,11 @@ SPARK_JAR=$SPARK_HOME/assembly/target/scala-2.10/spark-assembly_2.10-0.9.0-incub
   --class MF \
   --args yarn-standalone \
   --args $input \
-  --args $output \
-  --args $numIterations \
   --args $rank \
+  --args $numIterations \
+  --args $output \
   --args $lambda \
+  --args 1
   --args $block \
   --master-memory 4g \
   --worker-memory 4g \
