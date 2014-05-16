@@ -1,4 +1,4 @@
-package com.jd.spark.recomendation
+package com.jd.spark.recommendation
 
 import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
@@ -18,7 +18,7 @@ object MF {
 
   def main(args: Array[String]) {
 
-    if (args.length < 5 || args.length > 9) {
+    if (args.length < 5 || args.length > 10) {
       println("Usage: ALS <master> <ratings_file> <rank> <iterations> <output_dir> " +
         "[<lambda>] [<implicitPrefs>] [<alpha>] [<blocks>]")
       System.exit(1)
@@ -28,7 +28,8 @@ object MF {
     val lambda = if (args.length >= 6) args(5).toDouble else 0.01
     val implicitPrefs = if (args.length >= 7) args(6).toBoolean else false
     val alpha = if (args.length >= 8) args(7).toDouble else 1
-    val blocks = if (args.length == 9) args(8).toInt else -1
+    val blocks = if (args.length >= 9) args(8).toInt else -1
+    val sep = if (args.length == 9) args(9) else " "
     val conf = new SparkConf()
       .set("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
       .set("spark.kryo.registrator",  classOf[ALSRegistrator].getName)
@@ -38,7 +39,7 @@ object MF {
     val sc = new SparkContext(master, "ALS", conf)
 
     val ratings = sc.textFile(ratingsFile).map { line =>
-      val fields = line.split(',')
+      val fields = line.split(sep)
       Rating(fields(0).toInt, fields(1).toInt, fields(2).toDouble)
     }
     /*
@@ -63,17 +64,17 @@ object MF {
     // Evaluate the model on rating data
     val usersProducts = ratings.map{ case Rating(user, product, rate)  => (user, product)}
     val predictions = model.predict(usersProducts).map{
-      case Rating(user, product, rate) => ((user, product), rate)
+      case Rating(user, product, rate) => user.toString + sep + product.toString + sep + rate.toString
     }
     predictions.saveAsTextFile(outputDir + "/predictions")
-        /*
-        val ratesAndPreds = ratings.map{
-            case Rating(user, product, rate) => ((user, product), rate)
-        }.join(predictions)
-        val MSE = ratesAndPreds.map{
-            case ((user, product), (r1, r2)) =>  math.pow((r1- r2), 2)
-        }.reduce(_ + _)/ratesAndPreds.count
-        println("Mean Squared Error = " + MSE)
-        */
+    /*
+    val ratesAndPreds = ratings.map{
+      case Rating(user, product, rate) => ((user, product), rate)
+    }.join(predictions)
+    val MSE = ratesAndPreds.map{
+      case ((user, product), (r1, r2)) =>  math.pow((r1- r2), 2)
+    }.reduce(_ + _)/ratesAndPreds.count
+    println("Mean Squared Error = " + MSE)
+    */
   }
 }
