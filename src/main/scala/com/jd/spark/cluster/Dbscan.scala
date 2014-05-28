@@ -43,7 +43,6 @@ object Dbscan {
     val conf = new SparkConf()
       .setMaster(master)
       .setAppName("Dbscan")
-      .set("spark.executor.memory", "2g")
     val sc = new SparkContext(conf)
 
     val df = sc.textFile(inputFile)

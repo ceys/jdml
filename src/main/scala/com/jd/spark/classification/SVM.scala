@@ -2,7 +2,7 @@ package com.jd.spark.classification
 
 import org.apache.spark.SparkContext
 import org.apache.spark.mllib.classification.SVMWithSGD
-import org.apache.spark.mllib.regression.LabeledPoint
+import org.apache.spark.mllib.util.MLUtils
 
 /**
  * Created by zhengchen on 14-5-19.
@@ -10,27 +10,17 @@ import org.apache.spark.mllib.regression.LabeledPoint
 object SVM {
 
   def main(args: Array[String]) {
-    val numIterations = args(1)
+    if (args.length != 5) {
+      println("Usage: SVM <master> <input_dir> <step_size> <regularization_parameter> <niters>")
+      System.exit(1)
+    }
+    val sc = new SparkContext(args(0), "SVM")
+    val data = MLUtils.loadLabeledData(sc, args(1))
+    val model = SVMWithSGD.train(data, args(4).toInt, args(2).toDouble, args(3).toDouble)
+    println("Weights: " + model.weights.mkString("[", ", ", "]"))
+    println("Intercept: " + model.intercept)
 
+    sc.stop()
   }
-
-  // Load and parse the data file
-  val data = sc.textFile("mllib/data/sample_svm_data.txt")
-  val parsedData = data.map { line =>
-    val parts = line.split(' ')
-    LabeledPoint(parts(0).toDouble, parts.tail.map(x => x.toDouble).toArray)
-  }
-
-  // Run training algorithm to build the model
-  val numIterations = 20
-  val model = SVMWithSGD.train(parsedData, numIterations)
-
-  // Evaluate model on training examples and compute training error
-  val labelAndPreds = parsedData.map { point =>
-    val prediction = model.predict(point.features)
-    (point.label, prediction)
-  }
-  val trainErr = labelAndPreds.filter(r => r._1 != r._2).count.toDouble / parsedData.count
-  println("Training Error = " + trainErr)
 
 }
