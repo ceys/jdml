@@ -12,18 +12,18 @@ object SvmTrain {
 
   def main(args: Array[String]) {
     if (args.length != 7) {
-      println("Usage: SVM <master> <input_dir> <step_size> <regularization_parameter> <niters> <miniBatch> <output_dir>")
+      println("Usage: SvmTrain <master> <input_dir> <step_size> <regularization_parameter> <niters> <miniBatch> <output_dir>")
       System.exit(1)
     }
-    val sc = new SparkContext(args(0), "SVM")
+    val sc = new SparkContext(args(0), "SvmTrain")
     val data = MLUtils.loadLabeledData(sc, args(1))
     val model = SVMWithSGD.train(data, args(4).toInt, args(2).toDouble, args(3).toDouble, args(4).toDouble)
-    /*
+
     sc.parallelize( model.intercept + "," + model.weights.mkString(",") )
       .saveAsTextFile(args(5))
 
     sc.stop()
-    */
+
   }
 
 }
