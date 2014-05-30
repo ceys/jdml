@@ -1,6 +1,7 @@
 package com.jd.spark.evaluation
 
 import org.apache.spark.rdd.RDD
+import org.apache.spark.SparkContext._
 
 /**
  * Created by zhengchen on 14-5-18.
@@ -16,7 +17,7 @@ object RecommendationMetrics {
    * @param SEP2 测试数据分隔符,默认为"\t"
    * @return (userid, (recItemSortedSeq, testItemSet))
    */
-  def joinRecAndTest(modelData:RDD, testData:RDD, SEP1:String=",", SEP2:String="\t"): RDD = {
+  def joinRecAndTest(modelData:RDD[String], testData:RDD[String], SEP1:String=",", SEP2:String="\t"): RDD[(Int, (Seq[(Int, Float)], Seq[Int]))] = {
 
     val r1 = modelData.map(line => {
       val ls = line.split(SEP1)
@@ -40,7 +41,7 @@ object RecommendationMetrics {
    * @param topN 推荐上限值
    * @return (召回率，准确率)
    */
-  def recallAndPrecision(groupData:RDD, topN:Int):Tuple2 = {
+  def recallAndPrecision(groupData:RDD[(Int, (Seq[(Int, Float)], Seq[Int]))], topN:Int):(Float, Float) = {
 
     val (hit, testNum, recNum) =
       groupData.map{ case (user, (mItems, tItems)) =>
