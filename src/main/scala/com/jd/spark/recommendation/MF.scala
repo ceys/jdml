@@ -9,6 +9,8 @@ import org.apache.spark.SparkContext._
 import org.apache.spark.mllib.recommendation.{ALS, MatrixFactorizationModel, Rating}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.serializer.{KryoSerializer, KryoRegistrator}
+import scala.collection.mutable.PriorityQueue
+import org.jblas.DoubleMatrix
 
 
 object MF {
@@ -154,5 +156,30 @@ object MF {
       ((x.user, x.product), mapPredictedRating(x.rating))
     }.join(data.map(x => ((x.user, x.product), x.rating))).values
     math.sqrt(predictionsAndRatings.map(x => (x._1 - x._2) * (x._1 - x._2)).mean())
+  }
+
+  def predict(model: MatrixFactorizationModel, n: Int): RDD[Rating] = {
+    val sc = model.productFeatures.context
+    // Inefficient. Is it possible to broadcast directly from RDD?
+    val pfs = sc.broadcast(model.productFeatures.collect())
+    model.userFeatures.map {
+      case (user, uFeatures) => {
+        val topNProducts = new PriorityQueue[(Int, Double)]()(Ordering.by(t => -t._2))
+        topNProducts ++= Array.fill(n)((0,0.0))
+
+        val userVector = new DoubleMatrix(uFeatures)
+        pfs.map {
+          case (product, pFeatures) => {
+            val productVector = new DoubleMatrix(pFeatures)
+            val rating = userVector.dot(productVector)
+            if (topNProducts.head < rating) {
+              topNProducts += ((product, rating))
+              topNProducts.dequeue()
+            }
+          }
+        }
+        (user, topNProducts)
+      }
+    }
   }
 }
